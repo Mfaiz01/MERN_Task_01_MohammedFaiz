@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Task 1: Global App Theme Switcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project implements a global app theme switcher that allows users to switch between light and dark themes. The theme preference is stored in **localStorage**, so the user's choice is persisted across sessions. The app uses **React Context API** to manage the global theme state.
 
-## Available Scripts
+## Features
+- Toggle between light and dark themes.
+- The theme preference is saved in localStorage to persist across page reloads.
+- Context API is used to manage theme globally across the app.
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+### Light Theme
+![Light Theme](./src/screenshots/s1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dark Theme
+![Dark Theme](./src/screenshots/s2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- **React**
+- **Context API**
+- **localStorage**
 
-### `npm test`
+## Installation and Setup
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Start the app with `npm start`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
+1. Toggle the theme switcher in the UI.
+2. The app will switch between light and dark themes based on the toggle.
+3. The selected theme will be remembered on subsequent visits.
 
-### `npm run build`
+## Files
+- `ThemeContext.js`: Defines the Theme Context and provides state management for the theme.
+- `App.js`: Main application file where the theme toggle is applied.
+- `localStorage.js`: Utility functions to save and retrieve theme data from localStorage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Improvements
+- Add more themes for variety.
+- Implement animations for smooth transitions between themes.
